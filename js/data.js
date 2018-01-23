@@ -1,5 +1,5 @@
 var data = {
-  'restaurants': {
+  'TabernaMoe': {
     'name': 'Taberna de Moe',
     'type': 'bar',
     'img':  'assets/images/Moe_tabern.jpg',
@@ -7,21 +7,40 @@ var data = {
     'address': 'Av Siempre Viva 123',
     'servicios': 'Barra libre a partir de las 9pm'
   },
-  'restaurant1': {
+  'Caldero': {
     'name': 'El Caldero Chorreante',
     'type': 'cafeteria',
     'img': 'assets/images/Caldero-chorreante.jpg',
     'slogan': 'Prohibido Muggles y menores',
     'address': 'Callejón Diagon 23 esq Callejón Knockturn',
     'servicios': 'Servicio de Lechuzas 24 horas'
+  },
+  'Pizza': {
+    'name': 'Pizza Planet',
+    'type': 'restaurante',
+    'img': 'assets/images/Pizza-Planet.jpg',
+    'slogan': 'Al infinito y más allá',
+    'address': 'Space Rangers 345',
+    'servicios': 'Abierto 24 horas',
+  },
+  'Krusty': {
+    'name': 'Krusty Burguer',
+    'type': 'restaurante',
+    'img': 'assets/images/Krusty_Burger.png',
+    'slogan': 'Hamburguesas sabrosonas',
+    'address': 'Avenida Siempre viva 123',
+    'servicios': 'Krusty a domicilio',
+  },
+  'Krusty_krab': {
+    'name': 'Krusty Burguer',
+    'type': 'restaurante',
+    'img': 'assets/images/Krusty_Burger.png',
+    'slogan': 'Hamburguesas sabrosonas',
+    'address': 'Avenida Siempre viva 123',
+    'servicios': 'Krusty a domicilio',
   }
 
-
-
-
-
-
-};
+}
 // var data = {
 //   "restaurant": {
 //     {

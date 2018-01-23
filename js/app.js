@@ -8,7 +8,7 @@ $(document).ready(function(){
   $('#firstSection').hide(); //aquí se va a ocultar toda la primera sección
   $('.container').hide();
   setTimeout(function() { //mientras ocurre esta función
-    $('#brand').fadeOut(500);
+    $('#splash').fadeOut(500);
     $('#firstSection').show(); // y al finalizar se van a mostrar
     $('.container').show();
   }, 3000); //tiempo
