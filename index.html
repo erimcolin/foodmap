@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>FOODMAP</title>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3"></script>
+  </head>
+  <body>
+    <!-- vista splash -->
+    <div id="brand" class="background-color">
+      <div>
+        <div>
+          <img src="assets/images/splash.jpg" class="img-responsive" alt="logo">
+        </div>
+      </div>
+    </div>
+
+    <div id="firstSection">
+      <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" id="name-app">
+        <div class="container-fluid border">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header padding">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="font-size:25px;">FOODMAP</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">About<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Favorites</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row space">
+        <div id="map" class="col-xs-12">
+          <!-- <img class="img-responsive" src="" alt="GoogleMaps"> -->
+          <img class="img-responsive" src="assets/images/mapa.jpg" alt="Mapa">
+        </div>
+        <div class="col-xs-12">
+          <h2>Comida cerca de ti</h2>
+        </div>
+        <div class="col-xs-12">
+          <form class="form-horizontal input-space">
+            <div class="input-group">
+              <input type="text" id="filter" class="form-control input-lg" name="" placeholder="restaurante, cafetería, bar">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- imagenes de los restaurantes -->
+    <div class="container" id="img-container">
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="assets/images/chapata.jpg" data-name='snacks' class="img-responsive food-info" data-toggle="modal" data-target="#myModal" alt="local">
+        </div>
+        <div class="col-xs-6">
+          <img src="assets/images/pizza.jpg" class="img-responsive food-info1" data-toggle="modal" data-target="#myModal" alt="local">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="assets/images/hamburguesa.jpg" class="img-responsive" data-toggle="modal" data-target="#myModal" alt="local">
+        </div>
+        <div class="col-xs-4">
+          <img src="assets/images/snacks.jpg" class="img-responsive" data-toggle="modal" data-target="#myModal" alt="local">
+        </div>
+        <div class="col-xs-4">
+          <img src="assets/images/chanwich.jpg" class="img-responsive" alt="cafe">
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" id="close">&times;</span></button>
+              <h2 class="modal-title text-center name-of-place" id="myModalLabel">Titulo</h2>
+            </div>
+            <div class="modal-body pdg-body">
+              <div>
+                <img id="imagen1" src="assets/images/ruta.jpg" width="250" alt="ruta" class="img-responsive center-block">
+              </div>
+              <h3 class="slogan text-center"></h3>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6 col-sm-offset-2 col-sm-3 col-md-offset-1 col-md-2">
+                  <p class="address text-center">Dirección</p>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <p class="servicios text-center">Servicio a domicilio</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default btn-lg center-block btn-order" data-dismiss="modal" aria-label="Close">Ordena ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/mapa.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
